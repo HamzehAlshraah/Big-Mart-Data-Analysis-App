@@ -4,13 +4,13 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 st.sidebar.title("Big Mart operation ")
-data_mart=pd.read_csv("Big Mart.csv")
+data_mart=pd.read_csv("ProjectDE/Big Mart.csv")
 
 st.title("Dataset Big Mart ")
 
 col1, col2 = st.columns([1, 3])   
 with col2:
-    st.image("BigMart.png",width=300)
+    st.image("ProjectDE/BigMart.png",width=300)
 
 info_mart=st.sidebar.checkbox("Info Dataset Big Mart ",False)
 describe_mart=st.sidebar.checkbox("Describe Dataset Big Mart",False)
@@ -257,4 +257,5 @@ if st.sidebar.button("CLick") :
                 st.pyplot(fig)
     else:
         st.warning("There is an error in the selection, please select only one option")
+
         

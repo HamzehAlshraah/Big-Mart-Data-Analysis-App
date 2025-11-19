@@ -26,7 +26,7 @@ if st.sidebar.button("CLick") :
         st.subheader("DATA SHAPE BIG MART")
         rows_sh,columns_sh=data_mart.shape      
         data_shape_mart={" ": ["Columns","Rows"],
-                  "count":[rows_sh,columns_sh] 
+                  "count":[columns_sh,rows_sh] 
                   }
         st.table(pd.DataFrame(data_shape_mart)) # show row and columns
         
@@ -259,3 +259,4 @@ if st.sidebar.button("CLick") :
         st.warning("There is an error in the selection, please select only one option")
 
         
+
